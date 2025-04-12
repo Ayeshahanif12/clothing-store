@@ -1,0 +1,746 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-group {
+    gap: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: white;
+}
+
+nav h1 {
+    text-align: center;
+    font-size: 36px;
+    /* Bigger and bolder */
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 0;
+    position: relative;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    /* Soft glow */
+    margin: 0 auto;
+    margin-right: 280px;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+    }
+}
+
+
+
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #ff4081;
+}
+
+/* Search Bar Hover Effect */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    display: none;
+}
+
+.search-container:hover .search-bar {
+    display: block;
+}
+
+.person-icon {
+    position: relative;
+    /* Ensures the hover effect works */
+    display: inline-block;
+}
+
+.container {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -35px;
+    background: white;
+    padding: 36px;
+    border-radius: 34px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 334px;
+    height: 402px;
+}
+
+.person-icon:hover .container {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 1px;
+    font-size: 23px;
+    color: #333;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.sign a {
+    font-size: 19px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    outline: none;
+}
+
+
+input:focus {
+    border-color:3px solid black;
+    box-shadow: 0 0 5px black;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+}
+
+.password-box input {
+    padding-right: 10px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+input::placeholder {
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.add-to-cart {
+    width: 89%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.add-to-cart:hover {
+    background-color: rgb(55, 100, 102);
+}
+
+.link {
+    margin-top: 11px;
+    font-size: 12px;
+}
+
+.link a,
+.forgot-password a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link a:hover,
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password a {
+    font-size: 17px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    margin-top: -1px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 17px;
+}
+
+.user {
+    display: none;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 343px;
+}
+
+.categories img {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.categories a {
+    color: black;
+    margin-top: 96px;
+    margin-left: -145px;
+    margin-right: 51px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.category img {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.category a {
+    color: black;
+    margin-top: 96px;
+    margin-left: -145px;
+    margin-right: 51px;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Sidebar hidden by default */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Initially hidden outside the screen */
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    /* Smooth transition */
+    z-index: 999;
+}
+
+/* Show sidebar when hovering over the cart icon */
+.cart-container:hover .cart-sidebar {
+    right: 0;
+    /* Move sidebar into view */
+}
+
+/* Sidebar Header */
+.cart-header {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+}
+
+/* Sample Cart Items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.shipping-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* Sidebar hidden by default */
+.shipping-sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    /* Initially hidden outside the screen */
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    /* Smooth transition */
+    z-index: 999;
+    color: black;
+}
+
+.shipping-container:hover .shipping-sidebar {
+    right: 0;
+}
+
+.shipping-header {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.shipping-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+span {
+    color: #7e7878;
+}
+
+.foot {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    margin: 10px 20px;
+}
+
+.footercontainer h3 {
+    color: #111;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footercontainer a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 13px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.footercontainer a:hover {
+    text-decoration: underline;
+    color: #0077cc;
+}
+
+.footercontainer p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.footercontainer input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.footer {
+    background-color:#f4f4f4;
+    color: #111;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 11px;
+    font-weight: 200;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .footercontainer {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footercontainer input {
+        width: 100%;
+    }
+}
+
+.send-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #005fa3;
+}
+
+
+.links {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-item {
+    position: relative;
+    list-style: none;
+}
+
+.type {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    /* or white if your theme is white */
+    padding: 10px 0;
+    z-index: 999;
+    min-width: 200px;
+}
+
+.nav-item:hover .type {
+    display: block;
+}
+
+.type li {
+    list-style: none;
+}
+
+.type li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.type li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.privacy-policy {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b2b2b;
+}
+
+.policy-wrapper {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.policy-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.policy-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+}
+
+.policy-section {
+    margin-bottom: 25px;
+}
+
+.policy-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.policy-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.policy-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.policy-footer a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.policy-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.policy-container p {
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-wrapper {
+    max-width: 800px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contact-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.1);
+}
+
+.contact-btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.contact-btn:hover {
+    background-color: #005fa3;
+}
+
+#login {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -35px;
+    background: white;
+    padding: 36px;
+    border-radius: 34px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 334px;
+    height: 402px;
+}
+
+.signup {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 29.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    padding-top: 134px;
+    padding-bottom: 36px;
+    margin-bottom: 20px;
+}
+input{
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    border: solid 1px black;
+}
+
+#account {
+font-size: 30px;
+margin-bottom: 10px;
+font-weight: 900;    
+}
+input::placeholder{
+padding: 10px;
+font-size: 16px;
+text-transform: capitalize;
+}
+#create{
+    width: 30%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 15px;
+}
+#create:hover{
+    background-color: #111;
+}
+a{
+    
+}

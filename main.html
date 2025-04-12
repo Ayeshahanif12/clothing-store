@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Trendy Wear</title>
+
+</head>
+
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <span class="text-muted"></span>
+      <ul>
+        <li> <a class="links" href="C:\Users\HP\Desktop\clothing store\main.html">Home</a></li>
+        <li class="nav-item">
+          <a class="links" href="#">Categories</a>
+          <ul class="type">
+            <li><a href="#cart1">Unstitched</a></li>
+            <li><a href="#cart2">Bottoms</a></li>
+            <li><a href="#cart3">Pret 3 Piece</a></li>
+            <li><a href="#cart4">Luxury Pret</a></li>
+            <li><a href="#cart5">Festive Collection</a></li>
+            <li><a href="#cart6">Solids</a></li>
+            <li><a href="#cart7">Kids</a></li>
+            <li><a href="#cart8">Mens</a></li>
+          </ul>
+        </li>
+
+        <li> <a class="links" href="#policy">Policy</a> </li>
+        <li> <a class="links" href="#contactus">Contact us</a> </li>
+    </div>
+  </div>
+  </ul>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <nav>
+    <h1>Trendy Wear</h1>
+
+    <div class="icons">
+      <div class="search-container">
+        <i class="fa fa-search"></i>
+        <input type="text" class="search-bar" placeholder="Search...">
+      </div>
+      <div class="shipping-container">
+        <i class="fa fa-truck"></i> <!-- Truck Icon -->
+
+        <div class="shipping-sidebar">
+          <div class="shipping-header">Shipping Details</div>
+
+          <p class="shipping-info">🚚 Estimated Delivery: 3-5 Business Days</p>
+          <p class="shipping-info">📦 Order Processing: 24 Hours</p>
+          <p class="shipping-info">🌎 Worldwide Shipping Available</p>
+          <p class="shipping-info">💳 Free Shipping on Orders Over 3000Pkr</p>
+        </div>
+      </div>
+
+      <div class="person-icon" >
+        <a style="color: white;" href="C:\Users\HP\Desktop\clothing store\signup.html"> <i class="fa fa-user"></i> </a>
+
+        <!-- <div class="container" >
+          <h2>Create an Account</h2>
+          <p class="sign">Already have an account? <a href="#login">Sign in</a></p>
+
+          <div class="input-box">
+            <input type="text" placeholder="First Name" required>
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Last Name" required>
+          </div>
+
+          <div class="input-box">
+            <input type="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-box password-box">
+            <input type="password" placeholder="Password" required>
+            <span class="toggle-password"><i class="fa fa-eye"></i></span>
+          </div>
+
+          <p class="forgot-password"><a href=".user">Forgot Password?</a></p>
+          <button  class="add-to-cart">Sign Up</button>
+          <p class="link">By signing up, you agree to our <a href="#">Terms & Conditions</a></p>
+        </div>
+      </div>
+      <div id="login">
+        <div class="input-box">
+          <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-box password-box">
+          <input type="password" placeholder="Password" required>
+          <span class="toggle-password"><i class="fa fa-eye"></i></span>
+        </div>
+
+        <p class="forgot-password"><a href=".user">Forgot Password?</a></p>
+        <button class="add-to-cart">Sign Up</button>
+        <p class="link">By signing up, you agree to our <a href="#">Terms & Conditions</a></p>
+      </div>
+      </div> -->
+      <div class="user">
+        <input type="text" placeholder="username" required>
+        <input type="password" placeholder="Password" required>
+        <span class="toggle-password"><i class="fa fa-eye"></i></span>
+      </div>
+
+
+      </a>
+      <div class="cart-container">
+        <i class="fa fa-shopping-cart"></i> <!-- Cart Icon -->
+
+        <div class="cart-sidebar">
+          <div class="cart-header">My Cart</div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+    style="position: absolute ; top: 0; width: 100%; z-index: -1; margin-top:50px ;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.limelight.pk/cdn/shop/collections/Printed.jpg?v=1739859797" class="d-block w-100"
+          style=" height: 60vh;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.alkaramstudio.com/cdn/shop/files/Banner_2.jpg?v=1741071390&width=1500"
+          class="d-block w-100" style=" height: 60vh;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://nishatlinen.com/cdn/shop/files/eid-test-webBanners-UNSTITCH-FARMHOUSE2.jpg?v=1743654170&width=1500"
+          class="d-block w-100" style=" height: 60vh;" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <div id="cat">
+    <div class="categories">
+      <img src="https://myfashionroad.com/wp-content/uploads/2024/12/Untitled-1_0061_047A0415_1024x1024@2x-600x900.jpg"
+        alt="Unstitched"><br> <a href="#cart1">Unstitched</a>
+      <img src="https://www.crossstitch.pk/cdn/shop/files/MMM_1_1024x1024.jpg?v=1732013183" alt="Unstitched"><br> <a
+        href="#cart2">bottoms</a>
+      <img src="https://lakhanyonline.com/cdn/shop/files/12A0064.jpg?crop=center&height=675&v=1700029618&width=450"
+        alt="Pret 3piece"><br> <a href="#cart3">Pret 3piece</a>
+      <img
+        src="https://lakhanyonline.com/cdn/shop/files/31_56ab9de8-a6ab-4a1b-bea8-d745b4a24170.jpg?crop=center&height=1950&v=1725519707&width=1300"
+        alt="Luxury Pret"><br> <a href="#cart4">Luxury Pret</a>
+    </div>
+
+    <div class="category">
+      <img
+        src="https://www.noorangi.pk/cdn/shop/products/Maya-Winter-Festive-Collection-2022-By-Noorangi-noorangi-470_1880x.jpg?v=1681029620"
+        alt="Festive Collection"><br> <a href="#cart5">Festive Collection</a>
+      <img src="https://silayipret.com/cdn/shop/products/WhatsAppImage2022-12-11at5.58.50PM.jpg?v=1670763775&width=1500"
+        alt="Solids"><br> <a href="#cart6">Solids</a>
+      <img src="https://sherrys.pk/cdn/shop/files/DSC_7200.jpg?v=1736255980&width=320" alt="Kids"><br> <a
+        href="#cart7">Kids</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPROdiF9WdSjetK8QJ7jkzmbYuR16qL4K7nA&s"
+        alt="Men"><br> <a href="#cart8">Men</a>
+
+    </div>
+  </div>
+
+  <div id="cart1">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/LimeLight_Printed_Winter_UnStitched_Collection_2024_U3708-White_ed99153d-457b-4e8a-b9cb-42159baf35b6.webp?v=1741461232&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LimeLight Printed Winter UnStitched Collection 2024 (U3708-White)</h5>
+          <p class="card-text"> Description <br>
+            <span> Shirt
+              Paste print shirt 1.83 M
+              Fabric: Khaddar
+              Other Details
+              Color: White
+              Weight: 400g
+            </span>
+          </p>
+          <p>Rs.1,299.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/Alkaram_Silver_Lawn_Collection_2025_SLR-25-25-1-PINK_1af0b110-bf35-4990-ad8e-2dba266e01c5.webp?v=1741455247&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Alkaram Silver Lawn Collection 2025 (SLR-25-25-1-PINK)</h5>
+          <p class="card-text">Description <br>
+            <span> Printed Lawn Shirt 2.5 Meters
+              Printed Silver Lawn Dupatta 2.5 Meters
+            </span>
+          </p>
+          <p>Rs.2,390.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/Afsana_Printed_Dobby_Linen_Collection_2024_By_AR_Textile_D-01_ecab8418-b1a7-4a5f-ad29-86996e01498c.webp?v=1741463800&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Afsana Printed Dobby Linen Collection 2024 By AR Textile (D-01)</h5>
+          <p class="card-text">Description <br>
+            <span> Luxury Digital Printed Linen Dobby Shirt Luxury Digital Printed Linen Dobby Dupatta Luxury Digital
+              Printed Dobby Linen Trouser</span>
+          </p>
+          <P>5979 Pkr</P>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/Aangan_Embroidered_Boring_Collection_2023_By_Puri_Fabric_D-04.webp?v=1741469115&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aangan Embroidered Boring Collection 2023 By Puri Fabric (D-04)</h5>
+          <p class="card-text">Description <br>
+            <span> Digital Printed Embroidered Boring Shirt
+              Digital Printed Embroidered Boring Sleeve
+              Embroidered Chiffon Dupatta
+              Printed Trouser
+            </span>
+          </p>
+          <P>Rs.6,200.00
+          </P>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/LimeLight_Printed_Winter_UnStitched_Collection_2024_U3708-Beige_b3115511-2105-4a72-b91d-64daf36eda5a.webp?v=1741461242&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LimeLight Printed Winter UnStitched Collection 2024 (U3708-Beige)</p>
+            <p class="card-text">Description <br>
+              <span> Shirt
+                Paste print shirt 1.83 M
+                Fabric: Khaddar
+                Other Details
+                Color: Beige
+                Weight: 400g
+              </span>
+            </p>
+            <p>Rs.1,299.00</p>
+            <center><button class="add-to-cart">Add
+                to cart</button> </center>
+            <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/LimeLight_Printed_Winter_UnStitched_Collection_2024_U3864-Pink_cd220064-e749-4dd1-8260-6adc57cba2dc.webp?v=1741461221&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LimeLight Printed Winter UnStitched Collection 2024 (U3864-Pink)</h5>
+          <p class="card-text">Description <br>
+            <span> Shirt
+              Printed shirt 1.83 M
+              Fabric: Khaddar
+              Trouser
+              Printed trouser 1.8 M
+              Fabric: Khaddar
+              Other Details
+              Color: Pink
+              Weight: 600g
+            </span>
+          </p>
+          <p>Rs.1,999.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/LimeLight_Printed_Winter_UnStitched_Collection_2024_U3815-Grey_f17e8d1a-7b48-4d40-add0-bf1488e03185.webp?v=1741461246&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LimeLight Printed Winter UnStitched Collection 2024 (U3815-Grey)</h5>
+          <p class="card-text"> Description <br>
+            <span> Shirt
+              Printed shirt 1.83 M
+              Fabric: Khaddar
+              Other Details
+              Color: Grey
+              Weight: 400g
+            </span>
+          </p>
+          <p>Rs.1,499.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://umarposhak.pk/cdn/shop/files/LimeLight_Printed_Winter_UnStitched_Collection_2024_U3807-Blue_85ec5144-bbfe-4667-949e-b1c7b65357da.webp?v=1741461235&width=550"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LimeLight Printed Winter UnStitched Collection 2024 (U3807-Blue)</h5>
+          <p class="card-text">Description <br>
+            <span> Shirt
+              Printed shirt 1.83 M
+              Fabric: Slub Khaddar
+              Other Details
+              Color: Blue
+              Weight: 400g
+            </span>
+          </p>
+          <p>Rs.1,399.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart2">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img src="https://www.crossstitch.pk/cdn/shop/files/MMM_1_1024x1024.jpg?v=1732013183" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ELORA 1</h5>
+          <p class="card-text"><span>
+              SKU: 1000000131395
+              Design Code: 0124STBBAS0404
+              Fabric: CAMBRIC
+              Color: WHITE
+              Work Details: DYED
+            </span></p>
+          <p>
+            ₨1,290PKR</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.crossstitch.pk/cdn/shop/files/0125STBBAS0102_5.jpg?v=1740208271" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MAGNOLIA 2</h5>
+          <p class="card-text"><span>SKU: 1000000133582
+              Design Code: 0125STBBAS0102
+              Fabric: CAMBRIC
+              Color: RAVEN
+              Work Details: DYED</span></p>
+          <p>₨1,830PKR</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0125STBBAS0109_2_360x.jpg?v=1740207667"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PEONY 3</h5>
+          <p class="card-text"><span>SKU: 1000000133610
+              Design Code: 0125STBBAS0109
+              Fabric: CAMBRIC
+              Color: ANGORA
+              Work Details: DYED
+            </span></p>
+          <p>Rs.2,430</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0223STBFOR0206_2_360x.jpg?v=1693914873"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PLAIN STRAIGHT PANT 3</h5>
+          <p class="card-text"><span>SKU: 1000000127491
+              Design Code: 0223STBFOR0206
+              Fabric: RAW SILK
+              Color: CURRY
+              Work Details: DYED
+              Color
+              CURRY</span></p>
+          <p>Rs.1,740</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0125STBBAS0107_3_360x.jpg?v=1740207121"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PEONY 1</h5>
+          <p class="card-text"><span>SKU: 1000000133602
+              Design Code: 0125STBBAS0107
+              Fabric: CAMBRIC
+              Color: WHITE
+              Work Details: DYED
+              Color
+              WHITE</span></p>
+          <p>Rs.2,430</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0125STBBAS0108_2_360x.jpg?v=1740207304"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            PEONY 2</h5>
+          <p class="card-text"><span>SKU: 1000000133606
+              Design Code: 0125STBBAS0108
+              Fabric: CAMBRIC
+              Color: RAVEN
+              Work Details: DYED
+              Color
+              RAVEN</span></p>
+          <p>Rs.2,430</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBEXC0406_3_360x.jpg?v=1740210314"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MYSTIC TIDE 2</h5>
+          <p class="card-text"><span>SKU: 1000000133137
+              Design Code: 0324STBEXC0406
+              Fabric: KHADDAR
+              Color: ANGORA
+              Work Details: DYED
+              Color
+              ANGORA</span></p>
+          <p>₨1,720PKR</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cdn.shopify.com/s/files/1/0178/4492/8612/files/0324STBEXC0405_1_360x.jpg?v=1740210248"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+
+            MYSTIC TIDE 1</h5>
+          <p class="card-text"><span>SKU: 1000000133133
+              Design Code: 0324STBEXC0405
+              Fabric: KHADDAR
+              Color: RAVEN
+              Work Details: DYED
+              Color
+              RAVEN</span></p>
+          <p>₨1,720PKR</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart3">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-321-_2.jpg?v=1741246746&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Printed Embroidered Suit - PE25-321
+            INDIGO</h5>
+          <p class="card-text"><span>Enhance the value of the entire clothing with this printed embroidered three-piece
+              suit from the latest pret summer INDIGO collection.
+
+              Product Detail
+              Printed Embroidered Shirt With Dupatta & Trousers
+
+              Shirt
+              Round Neckline With Slit, Embroidery Neckline And An Extended Organza Sequence-Embroidered Border On
+              Sleeves, A Long-Paneled Shirt
+              Fabric: Jacquard
+              Color: Indigo
+
+              Dupatta
+              Printed Dupatta Adorned With Lace Detailing
+              Fabric: Swiss Voile
+              Color: White
+
+              Trousers
+              Fitted Trousers
+              Fabric: Cambric
+              Color: Indigo</span></p>
+          <p>Rs. 13,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-68-_6.jpg?v=1740657361&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Printed Suit - PE25-68
+            BLOCK PRINT</h5>
+          <p class="card-text"><span>Enhance the value of the entire clothing with this printed three-piece suit from
+              the latest pret summer BLOCK PRINT collection.
+
+              Product Detail
+              Printed Shirt With Dupatta & Trousers
+
+              Shirt
+              Round Neckline, Double Yoke With Gathered Waist, Long Flared Shirt
+              Fabric: Lawn
+              Color: Purple
+
+              Dupatta
+              Dupatta With Tassels Detail
+              Fabric: Voile
+              Color: Purple
+
+              Trousers
+              Loose Trousers
+              Fabric: Cambric
+              Color: Purple</span></p>
+          <p>Rs. 12,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-355-_1.jpg?v=1741247050&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Embroidered Suit - PE25-355
+            BLOCK PRINT</h5>
+          <p class="card-text"><span>Enhance the value of the entire clothing with this embroidered three-piece suit
+              from the latest pret summer BLOCK PRINT collection.
+
+              Product Detail
+              Embroidered Shirt With Dupatta & Trousers
+
+              Shirt
+              Round Neckline, Long Shirt With Embroidered Front And Sleeves
+              Fabric: Jacquard
+              Color: Blue
+
+              Dupatta
+              Fancy Sequence Dupatta
+              Fabric: Fancy Dupatta
+              Color: Blue
+
+              Trousers
+              Fitted Trousers
+              Fabric: Cambric
+              Color: Blue</span></p>
+          <p>Rs. 12,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-171-_4.jpg?v=1740655722&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Embroidered Suit - PE25-171
+            BORING PASTELS</h5>
+          <p class="card-text"><span>Enhance the value of the entire clothing with this embroidered three-piece suit
+              from the latest pret summer BORING PASTELS collection.
+
+              Product Detail
+              Embroidered Shirt With Dupatta & Trousers
+
+              Shirt
+              Round Neckline, Embroidered Neckline & Sleeves, Embroidered A-Line Shirt
+              Fabric: Jacquard
+              Color: Mint
+
+              Dupatta
+              Fabric: Yarn Dyed
+              Color: Multi
+
+              Trousers
+              Straight Trousers
+              Fabric: Cambric
+              Color: Mint</span></p>
+          <p>Rs. 14,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-240-_5.jpg?v=1740657364&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Printed Suit - PE25-240
+            KANTHA</h5>
+          <p class="card-text"><span>
+              Product Detail
+              Printed Shirt With Dupatta & Trousers
+
+              Shirt
+              Round Neckline With Placket, Lace Detail At Neckline & Sleeves, Printed Shirt
+              Fabric: Lawn
+              Color: Black
+
+              Dupatta
+              Fabric: Chiffon
+              Color: Black</span></p>
+          <p>Rs. 10,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-190-_3.jpg?v=1740656457&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Printed Embroidered Suit - PE25-190
+            KANTHA</h5>
+          <p class="card-text"><span>Product Detail
+              Printed Embroidered Shirt With Dupatta & Trousers
+
+              Shirt
+              Round Neckline With Slit & Buttons Detail On Piping, Lace Detail On Front, Embroidered Shirt
+              Fabric: Lawn
+              Color: Green
+
+              Dupatta
+              Fabric: Voile
+              Color: Green</span></p>
+          <p>Rs. 11,490.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://nishatlinen.com/cdn/shop/files/PE25-257-_1.jpg?v=1740380152&width=330" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Printed Embroidered Suit - PE25-257
+            IMPRESSION OF ELEMENTS</h5>
+          <p class="card-text"><span>Product Detail
+              Printed Embroidered Shirt With Dupatta & Trousers
+
+              Shirt
+              V Neckline, Embroidered Neckline, Short Shirt
+              Fabric: Lawn
+              Color: Black
+
+              Dupatta
+              Fabric: Poly Stripe
+              Color: Red</span></p>
+          <p>Rs. 10,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://nishatlinen.com/cdn/shop/files/PS25-56-_1_319894a0-e855-4880-8707-b68c3bb9885f.jpg?v=1737787540&width=330"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece - Printed Embroidered Suit - PS25-56
+            IMPRESSION OF ELEMENT</h5>
+          <p class="card-text"><span>Product Detail
+              Printed Embroidered Shirt With Dupatta & Trousers
+
+              Shirt
+              V Neckline, Front Open Long Printed & Embroidered Shirt
+              Fabric: Silk
+              Color: Peach
+
+              Dupatta
+              Printed Dupatta With Tassels Detail At Corners
+              Fabric: Diamond Lawn
+              Color: Peach</span></p>
+          <p>Rs. 12,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart4">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/06_e6661f70-00ce-4571-b13b-46ea0e93ca72.jpg?v=1742297673&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2 PC - Luxe Organza Suit</h5>
+          <p class="card-text"><span>Package Includes: 2 Piece - Shirt + Trouser
+              Shirt: Organza
+              Trouser: Viscose
+              Color: Mint green
+              Work Technique: Embroidered
+
+              both formal and semi-formal occasions.</span></p>
+          <p> PKR 7,871</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/06_db9e7e49-235a-4c75-aae3-d35f9265db5c.jpg?v=1742297672&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3PC - Luxe Khaddi net Suit</h5>
+          <p class="card-text"><span>Package Includes: 3 Piece - Shirt + Trouser + Dupatta
+              Shirt: Khadi net
+              Trouser: Viscose Dupatta : Khadi net
+              Color: Sky Blue
+              Work Technique: Embroidered
+
+              Size & Fit
+              Model Height: 5 feet, 7 inches
+              Model Wearing: Small
+              Disclaimer: Actual product color may vary slightly from the image.</span></p>
+          <p>PKR 10,121</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/03_22c8d63e-4a80-4ff7-a3ef-31f7942f2a15.jpg?v=1742297670&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+
+            2PC- Luxe Cotton Silk Suit</h5>
+          <p class="card-text"><span>Package Includes: 2 Piece - Shirt + Trouser
+              Shirt: Cotton Silk
+              Trouser: Cotton Silk
+              Color: Hot Pink
+              Work Technique: Embroidered
+
+              craftsmanship with modern flair for a stunning statement piece.</span></p>
+          <p>PKR 7,121</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/03_cf875994-6e00-477b-90ef-ba8e73b97475.jpg?v=1742297668&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2PC - Luxe Cotton Silk Suit</h5>
+          <p class="card-text"><span>Package Includes: 2 Piece - Shirt + Trouser
+              Shirt: Cotton Silk
+              Trouser: Cotton Silk
+              Color: Peach
+              Work Technique: Embroidered
+
+              Size & Fit
+              Model Height: 5 feet, 7 inches
+              Model Wearing: Small</span></p>
+          <p>PKR 7,421</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/04_fabbefde-4c74-4f68-bafa-7e9196324ef9.jpg?v=1742297666&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2PC - Luxe Cotton Silk Suit</h5>
+          <p class="card-text"><span>Package Includes: 2 Piece - Shirt + Trouser
+              Shirt: Cotton Silk
+              Trouser: Cotton Silk
+              Color: Hot Pink
+              Work Technique: Embroidered
+
+              Size & Fit
+              Model Height: 5 feet, 7 inches
+              Model Wearing: Small</span></p>
+          <p>PKR 6,971</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/05_e9c166ce-972c-4606-a75a-0168b1addd1d.jpg?v=1742297665&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2PC - Cotton Net Embroidered Suit</h5>
+          <p class="card-text"><span>ackage Includes: Straight Shirt With Cigarette Pants
+              Shirt: Cotton Net
+              Trouser: Viscose
+              Color: Black
+              Work Technique: Embroidered
+
+              Size & Fit
+              Model Height: 5 feet, 7 inches
+              Model Wearing: Small</span></p>
+          <p>PKR 7,121</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/07_bcbb24cb-007c-4053-aad4-10d13d40ec6e.jpg?v=1742297663&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2PC - Luxe Cotton Silk Suit</h5>
+          <p class="card-text"> <span>Package Includes: 2 Piece - Shirt + Trouser
+              Shirt: Cotton Silk
+              Trouser: Cotton Silk
+              Color: Berry
+              Work Technique: Embroidered
+
+              Size & Fit
+              Model Height: 5 feet, 7 inches
+              Model Wearing: Small</span></p>
+          <p>PKR5000</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://krosskulture.com/cdn/shop/files/08_59e937c1-cf2e-454a-8484-5f4b5209b1d4.jpg?v=1742297655&width=400"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">2PC - Embroidered Textured Cotton Suit</h5>
+          <p class="card-text"><span>Package Includes: 2 Piece - Shirt + Trouser
+              Shirt: Cotton Silk
+              Trouser: Cotton Silk
+              Color: Berry
+              Work Technique: Embroidered
+
+              Size & Fit
+              Model Height: 5 feet, 7 inches
+              Model Wearing: Small</span></p>
+          <p>PKR 7,046</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart5">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/s/i/silk-dupatta-schiffli-emb-shirt-dyed-trouser-gulahmed-sp-52047-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Unstitched Schfilli Embroidered Lawn Suit with Burnout Silk Dupatta SP-52047
+          </h5>
+          <p class="card-text"><span>3 Piece Unstitched Schfilli Embroidered Lawn Suit with Burnout Silk Dupatta
+              SP-52047</span></p>
+          <p>PKR 10,490</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/p/r/printed-zari-cotton-dup-emb-lawn-shirt-organza-gulahmed-sp-52043-half.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Unstitched Lacquer Embroidered</h5>
+          <p class="card-text"><span>3 Piece Unstitched Lacquer Embroidered Lawn Suit with Zari Paper Cotton Dupatta
+              SP-52043</span></p>
+          <p>PKR 10,990</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/l/a/lacquer-printed-cotton-dup-emb-lawn-shirt-organza-gulahmed-sp-52052-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+
+            3 Piece Unstitched Embroidered Lawn Suit</h5>
+          <p class="card-text"><span>
+              Share
+              3 Piece Unstitched Embroidered Lawn Suit with Lacquer Printed Cotton Net Dupatta SP-52052</span></p>
+          <p>PKR 11,990</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/l/a/lacquer-cotton-dup-shirt-dyed-inner-trouser-gulahmed-sp-52013-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Unstitched Embroidered Lacquer</h5>
+          <p class="card-text"><span>3 Piece Unstitched Embroidered Lacquer Printed Paper Cotton Suit with Lacquer
+              Printed Paper Cotton Dupatta SP-52013</span></p>
+          <p>PKR 10,990</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/p/r/printed-jaquard-dup-emb-lawn-shirt-dyed-trouser-gulahmed-sp-52007-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Unstitched Embroidered Lawn Suit</h5>
+          <p class="card-text"><span>3 Piece Unstitched Embroidered Lawn Suit with Printed Jacquard Dupatta
+              SP-52007</span></p>
+          <p>PKR 9,490</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/e/m/emb-dupatta-lacquer-lawn-shirt-dyed-trouser-gulahmed-pc-52001-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Unstitched Lacquer Printed Lawn Suit</h5>
+          <p class="card-text"><span>3 Piece Unstitched Lacquer Printed Lawn Suit with Embroidered Paper Cotton Dupatta
+              PC-52001</span></p>
+          <p>PKR 8,990</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/p/r/printed-paper-cotton-dupatta-lawn-shirt-gulahmed-pc-52003-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Piece Unstitched Printed Lawn Suit</h5>
+          <p class="card-text"><span>3 Piece Unstitched Printed Lawn Suit with Paper Cotton Dupatta PC-52003</span></p>
+          <p>PKR 6,490</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/p/r/printed-paper-cotton-dupatta-lawn-shirt-gulahmed-pc-52002-close.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Unstitched Printed Lawn Suit </h5>
+          <p class="card-text"><span>
+
+              3 Piece Unstitched Printed Lawn Suit with Paper Cotton Dupatta PC-52002</span></p>
+          <p>PKR 6,490</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart6">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dw1a867e73/images/6thMarchDrop25/3PEDF25V215S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Jacquard Shirt</h5>
+          <p class="card-text"><span>Dyed With Tilla Embroidered Front Panel, Dyed With Tilla Embroidered Back Panel,
+              Round With A Slit Neckline, Full Sleeves, Calf Length
+              Colour: Green
+              Fabric: Self Jacquard</span></p>
+          <p>Rs.7,490.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dwb8189ffc/images/6thMarchDrop25/3PEDF25V210S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Jacquard Shirt</h5>
+          <p class="card-text"><span>Details:
+              Dyed With Tilla Embroidered Sequins And Gotta Lace Finish Front Panel, Dyed Back Panel, Round With A Slit
+              Neckline, Full Sleeves, Calf Length
+              Colour: Yellow
+              Fabric: Self Jacquard</span></p>
+          <p>Rs.6,490.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dwa1c17bb2/images/6thMarchDrop25/3PRDES25V24S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Jacquard Shirt
+          </h5>
+          <p class="card-text"><span>Details:
+              Dyed With Tilla Embroidered And Sequins Front Panel, Dyed With Tilla Embroidered And Sequins Back Panel,
+              Round Neckline, Full Sleeves, Calf Length
+              Colour: Purple
+              Fabric: Self Jacquard</span></p>
+          <p>Rs.7,490.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dwa1c17bb2/images/6thMarchDrop25/3PRDES25V24S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Cotton Viscose Shirt
+          </h5>
+          <p class="card-text"><span>Details:
+              Dyed With Embroidered Front Panel, Dyed Back Panel, Round With A Slit Neckline, Full Sleeves, Knee Length
+              Colour: Blue
+              Fabric: Cotton Viscose</span></p>
+          <p>Rs.4,990.00</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dwd90da3ef/images/6thMarchDrop25/3PRDES25V22S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Cotton Viscose Shirt
+          </h5>
+          <p class="card-text"><span>Details:
+              Dyed With Embroidered Front Panel, Dyed Back Panel, Round With A Slit Neckline, Full Sleeves, Calf Length
+              Colour: Biege
+              Fabric: Cotton Viscose</span></p>
+          <p>Rs.4,990.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dwb1aafabc/images/6thMarchDrop25/3PEDF25V212S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Jacquard Shirt
+          </h5>
+          <p class="card-text"><span>Details:
+              Dyed With Tilla Embroidered And Sequins Front Panel, Dyed Back Panel, Round Neckline, Full Sleeves, Calf
+              Length
+              Colour: Purple
+              Fabric: Self Jacquard</span></p>
+          <p>Rs.6,490.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dw029decf0/images/6thMarchDrop25/3PEDF25V213S_999_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Jacquard Shirt
+          </h5>
+          <p class="card-text"><span>Details:
+              Dyed With Tilla Embroidered Sequins And Lace Finish Front Panel, Dyed Back Panel, Round With A Slit
+              Neckline, Full Sleeves, Calf Length
+              Colour: Purple
+              Fabric: Self Jacquard</span></p>
+          <p>Rs.6,490.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dw3b687702/images/6thMarchDrop25/03PCLRXW255D_3.JPG?sw=1000&sh=1200"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Solid Chambray Dupatta
+          </h5>
+          <p class="card-text"><span>Drape yourself this season in our dyed yellow lurex chambray dupatta.
+
+              Dupatta
+              Colour: Yellow
+              Fabric: Lurex Chambray</span></p>
+          <p>Rs.2,490.00
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart7">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/t/o/toddler_girl_blue_and_white_checkered_casual_shirt_224-617-007_tg_2_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Toddler Girl Blue and White Checkered Casual Shirt 224-617-007</h5>
+          <p class="card-text"><span>Toddler Girl Blue and White Checkered Casual Shirt 224-617-007</span></p>
+          <p>PKR 1,365</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/t/o/toddler_boy_salmon_casual_shirt_224-317-014_4_.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Toddler Boy Salmon Casual Shirt 224-317-014</h5>
+          <p class="card-text"><span>Toddler Boy Salmon Casual Shirt 224-317-014</span></p>
+          <p>PKR 1,418</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/t/o/toddler_girl_black_and_white_blouse_224-617-009_tg_4_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Toddler Girl Black and White Blouse 224-617-009</h5>
+          <p class="card-text"><span>Toddler Girl Black and White Blouse 224-617-009</span></p>
+          <p>PKR 1,365</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/j/u/junior_girls_tribal_colorful_sweatshirt_224-412-008_2_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Junior Girl Tribal Colorful Sweatshirt 224-412-008</h5>
+          <p class="card-text"><span>Junior Girl Tribal Colorful Sweatshirt 224-412-008</span></p>
+          <p>PKR 1,690</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/j/u/junior_girls_coral_sweatshirt_224-412-001_5_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Junior Girl Coral Sweatshirt 224-412-001</h5>
+          <p class="card-text"><span>Junior Girl Coral Sweatshirt 224-412-001</span></p>
+          <p>PKR 1,690</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/g/r/green_viscose_blouse_with_full_sleeves_224-617-015_2_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+
+            Toddler Girl Green Viscose Blouse With Full Sleeves 224-617-015</h5>
+          <p class="card-text"><span>
+
+              Toddler Girl Green Viscose Blouse With Full Sleeves 224-617-015</span></p>
+          <p>PKR 2,270</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/t/o/toddler_girl_dark_blue_non_denim_jacket_224-410-049_1_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Toddler Girl Dark Blue Non Denim Jacket 224-410-049</h5>
+          <p class="card-text"><span>Toddler Girl Dark Blue Non Denim Jacket 224-410-049</span></p>
+          <p>PKR 1,682</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/t/o/toddler_girls_multi_woven_blouse_224-614-020_5_.jpg?optimize=medium&fit=bounds&height=825&width=550&canvas=550:825"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Toddler Girl Multi Woven Blouse 224-614-020</h5>
+          <p class="card-text"><span>Toddler Girl Multi Woven Blouse 224-614-020</span></p>
+          <p>PKR 2,017
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cart8">
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/g/r/graphite_grey_styling_suit_sk-psd24-014_2__1.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Graphite Grey Styling Suit SK-PSD24-014</h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6 ft and wearing size Medium
+              SKU: M-AP-24-403436 -P
+              Color: Graphite Grey</span></p>
+          <p>PKR 7,998
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/b/l/black_gold_latha_unstitched_fabric_cotton-dark_grey_1_.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Black Gold Latha Unstitched Fabric Cotton
+          </h5>
+          <p class="card-text"><span>Premium Fine Quality 100% Cotton Fabric
+              7 MTR Suit Width 34 in With Inlay Collection
+              SKU: MEN-FABRIC-302504 -P</span></p>
+          <p>PKR 5,145</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/m/e/men-ethnic-waist-coat-color-choc-brown-blended-band-collar-regular-fit-wc-pd24-034-half-front.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Styling Waist Coat WC-PD24-034
+          </h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6'2 and wearing size Medium
+              SKU: M-AP-25-413067 -P
+              Color: Brown</span></p>
+          <p>PKR 3,995
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/m/e/men-ethnic-waist-coat-color-purple-blended-band-collar-regular-fit-wc-pd24-064-half-front.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Styling Waist Coat WC-PD24-064
+          </h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6'2 and wearing size Medium
+              SKU: M-AP-25-418669 -P
+              Color: Dark Plum</span></p>
+          <p>PKR 5,943
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 20px; margin-top:90px;">
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/s/t/styling_kurta_kr-sty24-083_4_.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Styling Kurta KR-STY24-083
+          </h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6ft and wearing size Medium
+              SKU: M-AP-24-412643 -P
+              Color: Dark Green</span></p>
+          <p>PKR 1,499</p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/m/e/men-ethnic-suits-color-purple-blended-band-collar-regular-fit-sk-emb25-004-half-front.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Embroidered Suits SK-EMB25-004
+          </h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6'2 and wearing size Medium
+              SKU: M-AP-25-426903 -P
+              Color: Dull Purple</span></p>
+          <p>PKR 9,990
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/m/e/men-ethnic-suits-color-brown-100_cotton_chairman_latha-band-collar-regular-fit-sk-sty25-011-half-front.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Styling Suits SK-STY25-011</h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6'2 and wearing size Medium
+              SKU: M-AP-25-426913 -P
+              Color: Mud</span></p>
+          <p>PKR 9,990
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.gulahmedshop.com/media/catalog/product/m/e/men-ethnic-suits-color-blue-100-cotton-shirt-collar-regular-fit-sk-p24-136-half-front.jpg?optimize=medium&fit=bounds&height=900&width=600"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Basic Suits SK-P24-136
+          </h5>
+          <p class="card-text"><span>Regular Fit
+              Model Specs: The model is 6'2 and wearing size Medium
+              SKU: M-AP-25-420016 -P
+              Color: Navy Blue</span></p>
+          <p>PKR 6,594
+          </p>
+          <center><button class="add-to-cart">Add
+              to cart</button> </center>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <div id="policy">
+    <section class="privacy-policy">
+      <div class="policy-wrapper">
+        <h1 class="policy-title">Privacy Policy</h1>
+        <p class="policy-intro">
+          At <strong>Trendy Wear</strong>, we are committed to protecting your privacy and ensuring that your personal
+          information is handled in a safe and responsible manner.
+        </p>
+
+        <div class="policy-section">
+          <h2>1. Information We Collect</h2>
+          <p>We collect personal information including your name, email, shipping address, and payment details when you
+            place an order or create an account with us.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>2. Use of Information</h2>
+          <p>Your information is used to process your orders, improve our services, and communicate updates or
+            promotional offers — only if you opt-in.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>3. Data Security</h2>
+          <p>All data is encrypted and stored securely. We implement strict measures to prevent unauthorized access,
+            misuse, or disclosure.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>4. Cookies</h2>
+          <p>We use cookies to personalize your experience, analyze site traffic, and enhance website functionality. You
+            can manage cookies in your browser settings.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>5. Third-Party Disclosure</h2>
+          <p>We do not sell or trade your personal information. It may be shared only with trusted partners who assist
+            us in delivering our services.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>6. Your Rights</h2>
+          <p>You may request access to, correction of, or deletion of your personal data at any time by contacting us.
+          </p>
+        </div>
+
+        <p class="policy-footer">
+          For any queries, please contact us at <a href="mailto:support@trendywear.com">support@trendywear.com</a>
+        </p>
+      </div>
+    </section>
+
+  </div>
+  <div id="contactus">
+    <section class="contact-section">
+      <div class="contact-wrapper">
+        <h2 class="contact-title">Contact Us</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="foot">
+    <div class="footercontainer">
+      <h3 style="margin-top: 7px;">About Trendy Wear</h3>
+      <a href="">ABOUT US </a>
+      <a href="">COMPANY</a>
+      <a href="">CAREERS</a>
+      <a href="">BLOGS</a>
+      <a href="">STORE LOCATORS</a>
+    </div>
+
+    <div class="footercontainer">
+      <h3>MY ACCOUNT</h3>
+      <a href="C:\Users\HP\Desktop\clothing store\login.html">LOGIN</a>
+      <a href="C:\Users\HP\Desktop\clothing store\signup.html">CREATE ACCOUNT</a>
+      <a href="C:\Users\HP\Desktop\clothing store\signup.html">ACCOUNT INFO</a>
+      <a href="#">ORDER HISTORY</a>
+      <a href="#">ORDER HISTORY</a>
+    </div>
+
+    <div class="footercontainer">
+      <h3 style="margin-top: 1px;">FIND US ON</h3>
+      <a href="#">INSTAGRAM</a>
+      <a href="#">FACEBOOK</a>
+      <a href="#">TWITTER</a>
+      <a href="#">WHATSAPP</a>
+      <a href="#">YOUTUBE</a>
+    </div>
+    <div class="footercontainer">
+      <h3 style="margin-top: 1px;">SIGN UP FOR UPDATES</h3>
+      <P>By entering your email address below, you consent to receiving <br> our newsletter with access to our latest
+        collections, events and initiatives. more details on this <br> are provided in our Privacy Policy.</P>
+      <input type="email" name="" id="" placeholder="Email Address">
+      <input type="tel" name="" id="" placeholder="Whatsapp Number">
+      <button class="send-btn">Send</button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p style="margin-top: 13px; font-size: 26px;">&#169; trendywear copyright 2024</p>
+  </div>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
