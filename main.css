@@ -96,24 +96,22 @@ nav h1 {
     /* Ensures the hover effect works */
     display: inline-block;
 }
+/* CARD CSS */
 
-.container {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: -35px;
-    background: white;
-    padding: 36px;
-    border-radius: 34px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 334px;
-    height: 402px;
-}
+/* .container {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-.person-icon:hover .container {
-    display: block;
-}
+} */
+/* .card{
+    width: 25%;
+    height: auto;
+    background-color: violet;
+
+} */
+
 
 h2 {
     margin-bottom: 1px;
@@ -169,20 +167,14 @@ input:focus {
     padding-right: 10px;
 }
 
-.toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-}
+
 
 input::placeholder {
     font-size: 13px;
     margin-right: 10px;
 }
 
-.add-to-cart {
+.addToCart {
     width: 89%;
     padding: 8px;
     border: none;
@@ -240,9 +232,7 @@ input::placeholder {
     font-size: 17px;
 }
 
-.user {
-    display: none;
-}
+
 
 .categories {
     display: flex;
@@ -740,7 +730,4 @@ text-transform: capitalize;
 }
 #create:hover{
     background-color: #111;
-}
-a{
-    
 }

@@ -16,7 +16,7 @@
     <div class="bg-dark p-4">
       <span class="text-muted"></span>
       <ul>
-        <li> <a class="links" href="C:\Users\HP\Desktop\clothing store\main.html">Home</a></li>
+        <li> <a class="links" href="index.html">Home</a></li>
         <li class="nav-item">
           <a class="links" href="#">Categories</a>
           <ul class="type">
@@ -45,16 +45,52 @@
       </button>
     </div>
   </nav>
+  <form action="" method="post">
   <div class="signup">
-    <h1 id="account">Create Account</h1>
-    <input type="text" id="name" placeholder="First Name" required />
-    <input type="text" id="name" placeholder="Last Name" required />
-    <input type="email" name="" id="email" placeholder="Email" required />
-    <input type="password" name="" id="" placeholder="password" required />
-    <button id="create">Create</button>
-    <p style="margin-top: 20px;" class="sign">Already have an account? <a style="font-size: 15px;  "
-        href="C:\Users\HP\Desktop\clothing store\login.html">LOGIN</a></p>
+    <h1 id="account">Log in</h1>
+
+    <input type="email" name="email" id="email" placeholder="Email" required />
+    <input type="password" name="password" id="password" placeholder="password" required />
+
+    <button id="create" name="login">log in</button> <br>
+    <a style="display: block;
+        margin: 0 auto;
+        width: fit-content;
+        color: black;" href="signup.php">Create Account</a>
   </div>
+  </form>
+
+  <?php
+ $conn = mysqli_connect("localhost","root","","clothing_store");
+if(!$conn){
+    die("connection failed!");
+}
+
+
+if (isset($_POST['login'])) {
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+
+  $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+  $result = mysqli_query($conn, $sql);
+
+  if (mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);  
+    $role = $row['roll']; 
+
+    if ($role == 'user') {
+      echo "<script>alert('Login success'); window.location.href='index.php';</script>";
+    } else {
+      echo "<script>alert('Login success'); window.location.href='http://localhost/clothing%20store/adminpanel/adminpage.php';</script>";
+    }
+  } else {
+    echo "<script>alert('Invalid email or password');</script>";
+  }
+}
+?>
+
+  
+  
 
   <div class="foot">
     <div class="footercontainer">
@@ -68,9 +104,9 @@
 
     <div class="footercontainer">
       <h3>MY ACCOUNT</h3>
-      <a href="C:\Users\HP\Desktop\clothing store\login.html">LOGIN</a>
-      <a href="C:\Users\HP\Desktop\clothing store\signup.html">CREATE ACCOUNT</a>
-      <a href="C:\Users\HP\Desktop\clothing store\signup.html">ACCOUNT INFO</a>
+      <a href="login.html">LOGIN</a>
+      <a href="signup.html">CREATE ACCOUNT</a>
+      <a href="signup.html">ACCOUNT INFO</a>
       <a href="#">ORDER HISTORY</a>
       <a href="#">ORDER HISTORY</a>
     </div>
