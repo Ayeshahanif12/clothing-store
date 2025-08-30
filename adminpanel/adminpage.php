@@ -1,38 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Page</title>
+<?php
+session_start();
+if($_SESSION['role']!="admin"){
+  header("Location: http://localhost/clothing%20store/login.php");
+  exit();
+}
+
+$conn = mysqli_connect("localhost", "root", "", "clothing_store");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+} 
+
+if(isset($_POST['add_category'])) {
+    $image = $_FILES['image']['name'];   
+    $alt_text = $_POST['category_name']; 
+    $target = "image/" . basename($image);
+
+    $sql = "INSERT INTO carousel (img, alt_text) VALUES ('$image', '$alt_text')";
+    if (mysqli_query($conn, $sql)) {
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+            echo "<p>Image uploaded successfully.</p>";
+        } else {
+            echo "<p>Error uploading image.</p>";
+        }
+    } else {
+        echo "<p>Error: " . mysqli_error($conn) . "</p>";
+    }
+}
+?>
+
+  
+
+<!DOCTYPE html> 
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
+<style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x:hidden;
 
-  <style>
-    body {
-      min-height: 100vh;
-      display: flex;
-    }
-    .sidebar {
-      width: 280px;
-      height: 100vh;
-      background-color: #212529;
-      color: white;
-    }
-    .sidebar .nav-link {
-      color: white;
-    }
-    .sidebar .nav-link.active {
-      background-color: #0d6efd;
-    }
-  </style>
-</head>
+}
+
+/* Sidebar */
+.sidebar {
+   width: 250px;
+    background: #212529;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+}
+.sidebar .nav-link {
+    color: #ccc;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.sidebar .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+/* Form Container */
+form {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+form h3 {
+    color:black;
+    margin-left: 400px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+}
+input[type="text"], 
+input[type="file"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+input[type="text"]:focus, 
+input[type="file"]:focus {
+    border-color: #0d6efd;
+    outline: none;
+}
+input[type="submit"] {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 450px;
+    transition: background 0.3s;
+}
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-left:300px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #0d6efd;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f5ff;
+}
+
+table img {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+
+table a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #0056b3;
+}
+        
+        #edit-btn {
+            background-color: #007bff; /* Blue */
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            }
+
+            #edit-btn:hover {
+             background-color: #0056b3;
+            }
+
+            #delete-btn {
+             background-color: #28a745; /* Green */
+             color: white;
+             text-decoration: none;
+             padding: 5px 10px;
+             border-radius: 4px;
+             display: inline-block;
+            }
+
+            #delete-btn:hover {
+              background-color: #1e7e34;
+            }
+
+            .box{
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              margin-left: 290px;
+              margin-bottom: 20px;
+            }
+
+
+</style>
 <body>
-
-  <!-- Sidebar -->
+   
+ <!-- Sidebar -->
   <div class="sidebar d-flex flex-column p-3">
     <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <span class="fs-4">Admin</span>
@@ -91,12 +257,65 @@
         <li><a class="dropdown-item" href="#">Settings</a></li>
         <li><a class="dropdown-item" href="#">Profile</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
+        <li><a class="dropdown-item" href="http://localhost/clothing%20store/login.php">Sign out</a></li>
       </ul>
     </div>
   </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<form method="POST" enctype="multipart/form-data">
+
+        <h3>Add Carousel Item</h3>
+<div class="box">
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image" class="form-control mb-2" required>
+        <label for="category_name">Category Name</label>
+        <input type="text" name="category_name" id="category_name" class="form-control mb-2" required>
+          </div>
+
+        <input type="submit" name="add_category" value="Add Category" class="btn-primary">
+    </div>
+</form>
+<?php
+$select = "SELECT * FROM carousel";
+            $result = mysqli_query($conn, $select);
+            $dataAll = [];
+
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $dataAll[] = $row;
+                }
+            } else {
+                echo "<p>No carousel found.</p>";
+            }
+
+            mysqli_close($conn);
+            ?>
+
+<table border=1>
+    <tr>
+        <th>Image</th>
+        <th>alt_text</th>
+
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+  <?php foreach ($dataAll as $row): ?>
+  <tr>
+    <td><img src="<?php echo htmlspecialchars('image/' . $row['img']); ?>" alt=""></td>
+    <td><?php echo htmlspecialchars($row['alt_text']); ?></td>
+    <td>
+      <a href="editcara.php?id=<?php echo $row['id']; ?>" class="edit-btn">Edit</a>
+    </td>
+    <td>
+      <a href="deletecara.php?id=<?php echo $row['id']; ?>" class="delete-btn">Delete</a>
+    </td>
+  </tr>
+  <?php endforeach; ?>
+</table>
+</div>
+
+        </main>
 </body>
 </html>

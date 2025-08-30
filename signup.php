@@ -1,3 +1,16 @@
+<?php
+$conn = mysqli_connect("localhost", "root", "", "clothing_store");
+if (!$conn) { 
+    die("Database connection failed: " . mysqli_connect_error());
+}
+
+$category =mysqli_query($conn, "SELECT * FROM nav_categories ");
+  
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,14 +32,11 @@
         <li class="nav-item">
           <a class="links" href="#">Categories</a>
           <ul class="type">
-            <li><a href="#cart1">Unstitched</a></li>
-            <li><a href="#cart2">Bottoms</a></li>
-            <li><a href="#cart3">Pret 3 Piece</a></li>
-            <li><a href="#cart4">Luxury Pret</a></li>
-            <li><a href="#cart5">Festive Collection</a></li>
-            <li><a href="#cart6">Solids</a></li>
-            <li><a href="#cart7">Kids</a></li>
-            <li><a href="#cart8">Mens</a></li>
+            <?php
+            while ($row = mysqli_fetch_assoc($category)) {
+                echo "<li><a href='#cart{$row['id']}'>{$row['name']}</a></li>";
+            }
+            ?>
           </ul>
         </li>
         <li><a class="links" href="#policy">Policy</a></li>
@@ -56,7 +66,7 @@
       <button id="create" name="create">Create</button>
       <p style="margin-top: 20px;" class="sign">
         Already have an account?
-        <a style="font-size: 15px;" href="login.html">LOGIN</a>
+        <a style="font-size: 15px;" href="login.php">LOGIN</a>
       </p>
     </div>
   </form>
@@ -114,17 +124,58 @@
       <a href="#">WHATSAPP</a>
       <a href="#">YOUTUBE</a>
     </div>
-
+    <!-- NEWSLETTER -->
     <div class="footercontainer">
-      <h3>SIGN UP FOR UPDATES</h3>
-      <p>By entering your email address below, you consent to receiving <br />
-        our newsletter with access to our latest collections, events and initiatives. More details on this <br />
-        are provided in our Privacy Policy.</p>
-      <input type="email" placeholder="Email Address" />
-      <input type="tel" placeholder="Whatsapp Number" />
-      <button class="send-btn">Send</button>
+      <h3 style="margin-top: 1px;">SIGN UP FOR UPDATES</h3>
+      <P>By entering your email address below, you consent to receiving <br> our newsletter with access to our latest
+        collections, events and initiatives. more details on this <br> are provided in our Privacy Policy.</P>
+      <form action="" method = "post">
+        <input type="email" name="email" id="" placeholder="Email Address">
+      <input type="tel" name="whatsapp" id="" placeholder="Whatsapp Number">
+      <button class="send-btn" name="subscribe">Subscribe</button>
+      </form>
     </div>
+
   </div>
+
+<?php
+  // CONNECTING NEWSLETTER WITH PHP
+
+// Connect to database
+$conn = mysqli_connect("localhost", "root", "", "clothing_store");
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if (isset($_POST['subscribe'])) {
+    $email = $_POST['email'];
+    $whatsapp = $_POST['whatsapp'];
+
+    // Optional: Input Validation
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "<script>alert('Invalid email');</script>";
+    } elseif (!preg_match('/^\d{11}$/', $whatsapp)) {
+        echo "<script>alert('WhatsApp number must be 11 digits');</script>";
+    } else {
+        // Fix: use correct column name 'whatsappno'
+        $stmt = mysqli_prepare($conn, "INSERT INTO newsletter (email, whatsappno) VALUES (?, ?)");
+        mysqli_stmt_bind_param($stmt, "ss", $email, $whatsapp);
+        $exe = mysqli_stmt_execute($stmt);
+
+        if ($exe) {
+            echo "<script>alert('Subscription successful');</script>";
+        } else {
+            echo "<script>alert('Insert failed: " . mysqli_error($conn) . "');</script>";
+        }
+
+        mysqli_stmt_close($stmt);
+    }
+}
+
+mysqli_close($conn);
+?>
+
 
   <div class="footer">
     <p style="margin-top: 13px; font-size: 26px;">&#169; Trendy Wear copyright 2024</p>

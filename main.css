@@ -238,7 +238,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 343px;
+    margin-top: 150px;
 }
 
 .categories img {
@@ -256,9 +256,9 @@ input::placeholder {
 
 .categories a {
     color: black;
-    margin-top: 96px;
     margin-left: -145px;
     margin-right: 51px;
+    text-decoration: none;
 }
 
 .category {

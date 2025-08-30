@@ -76,8 +76,8 @@ form {
     width: 100%;
 }
 form h3 {
-    text-align: center;
     color:black;
+    margin-left: 400px;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -89,7 +89,7 @@ label {
 }
 input[type="text"], 
 input[type="file"] {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     margin-bottom: 18px;
     border: 1px solid #ccc;
@@ -109,6 +109,7 @@ input[type="submit"] {
     padding: 12px;
     font-size: 16px;
     border-radius: 6px;
+    margin-left: 450px;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -182,6 +183,13 @@ table a:hover {
               background-color: #1e7e34;
             }
 
+ .box{
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              margin-left: 290px;
+              margin-bottom: 20px;
+            }
 
 
 </style>
@@ -255,10 +263,12 @@ table a:hover {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <form method="POST" enctype="multipart/form-data">
         <h3>Add New Category</h3>
+        <div class="box">
         <label for="image">Image</label>
         <input type="file" name="image" id="image" class="form-control mb-2" required>
         <label for="category_name">Category Name</label>
         <input type="text" name="category_name" id="category_name" class="form-control mb-2" required>
+        </div>
         <input type="submit" name="add_category" value="Add Category" class="btn-primary">
     </div>
 </form>
